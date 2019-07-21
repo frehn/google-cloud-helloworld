@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>From backend: {{ msgBackend }}</p>,
+    <p>From backend: {{ msgBackend }}</p>
     <p>From function: {{ msgFunction }} </p>
   </div>
 </template>
