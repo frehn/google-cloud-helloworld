@@ -1,6 +1,6 @@
 cd backend/
-deploy.sh
+./deploy.sh
 cd ../frontend/
-deploy.sh
+./deploy.sh
 cd ..
-gcloud app deploy dispatch.yaml 
+gcloud -q app deploy dispatch.yaml 

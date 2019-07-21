@@ -1,6 +1,3 @@
 dispatch:
-        - url: "compact-garage-247116.appspot.com/"
-          service: frontend
-
-        - url: "compact-garage-247116.appspot.com/backend"
+        - url: "compact-garage-247116.appspot.com/backend/*"
           service: backend
