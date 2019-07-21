@@ -1,0 +1,12 @@
+^(.*/)?#.*#$
+^(.*/)?.*~$
+^(.*/)?.*\.py[co]$
+^(.*/)?.*/RCS/.*$
+^(.*/)?\..*$
+node_modules/
+package.json
+package-lock.json
+postcss.config.js
+public/
+README.md
+src/

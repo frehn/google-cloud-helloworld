@@ -1,25 +1,5 @@
-runtime: java
-api_version: 1
-threadsafe: true
+runtime: nodejs10
 
-skip_files:
-        - ^(.*/)?#.*#$
-        - ^(.*/)?.*~$
-        - ^(.*/)?.*\.py[co]$
-        - ^(.*/)?.*/RCS/.*$
-        - ^(.*/)?\..*$
-        - frontend/node_modules/
-        - frontend/package.json
-        - frontend/package-lock.json
-        - frontend/postcss.config.js
-        - frontend/public/
-        - frontend/README.md
-        - frontend/src/
-
-handlers:
-        - url: /
-          static_files: dist/index.html
-          upload: dist/index.html
-
-        - url: /
-          static_dir: dist
+network:
+        forwarded_ports:
+                - 3000/tcp
