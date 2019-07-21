@@ -1,6 +1,7 @@
 <template>
-  <div class="hello">
-    {{ msg }}
+  <div>
+    <p>From backend: {{ msgBackend }}</p>,
+    <p>From function: {{ msgFunction }} </p>
   </div>
 </template>
 
@@ -11,14 +12,20 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: null
+      msgBackend: null,
+      msgFunction: null
     }
   },
   mounted () {
     axios
       .get('/backend/hello')
-      .then(response => (this.msg = response.data))
-      .catch(error => (this.msg = error))
+      .then(response => (this.msgBackend = response.data))
+      .catch(error => (this.msgBackend = `Error GETing from backend: ${error}`))
+
+    axios
+      .get('https://us-central1-compact-garage-247116.cloudfunctions.net/hello-world-function')
+      .then(response => (this.msgFunction = response.data))
+      .catch(error => (this.msgFunction = `Error GETing from function: ${error}`))
   }
 }
 </script>

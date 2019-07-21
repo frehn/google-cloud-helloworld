@@ -1,6 +1,6 @@
 cd backend/
-./deploy.sh
+./deploy.sh || exit 1
 cd ../frontend/
-./deploy.sh
+./deploy.sh || exit 1
 cd ..
-gcloud -q app deploy dispatch.yaml 
+gcloud -q app deploy dispatch.yaml

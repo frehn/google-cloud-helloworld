@@ -1,1 +1,1 @@
-gcloud -q app deploy app.yaml 
+gcloud -q app deploy app.yaml
