@@ -8,13 +8,13 @@ skip_files:
         - ^(.*/)?.*\.py[co]$
         - ^(.*/)?.*/RCS/.*$
         - ^(.*/)?\..*$
-        - node_modules/
-        - package.json
-        - package-lock.json
-        - postcss.config.js
-        - public/
-        - README.md
-        - src/
+        - frontend/node_modules/
+        - frontend/package.json
+        - frontend/package-lock.json
+        - frontend/postcss.config.js
+        - frontend/public/
+        - frontend/README.md
+        - frontend/src/
 
 handlers:
         - url: /
