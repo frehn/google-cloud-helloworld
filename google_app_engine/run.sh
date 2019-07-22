@@ -1,5 +1,5 @@
 cd backend/
-npm start &
+./run.sh &
 cd ../frontend
-npm run serve &
+./run.sh &
 cd ..

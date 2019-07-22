@@ -14,9 +14,11 @@ A sample Google Cloud application using
 
 To build, execute `build.sh`.
 
-# Running
+# Running locally
 
-To run locally, execute `run.sh`.
+To run locally, execute `run.sh`. Note that run.sh starts services in the background.
+Termination is not supported yet; the Node.js processes need to be killed manually to
+terminate the application.
 
 # Deploying to Google Cloud
 
