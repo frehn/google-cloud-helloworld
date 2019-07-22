@@ -4,3 +4,6 @@
 ^(.*/)?.*/RCS/.*$
 ^(.*/)?\..*$
 node_modules/
+build.sh
+run.sh
+deploy.sh

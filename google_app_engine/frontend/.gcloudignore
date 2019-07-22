@@ -10,3 +10,6 @@ postcss.config.js
 public/
 README.md
 src/
+build.sh
+deploy.sh
+run.sh
