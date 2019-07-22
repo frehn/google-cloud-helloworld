@@ -7,6 +7,7 @@
 
 <script>
 const axios = require('axios')
+const googleFunctionUrl = process.env.VUE_APP_GOOGLE_FUNCTION
 
 export default {
   name: 'HelloWorld',
@@ -23,7 +24,7 @@ export default {
       .catch(error => (this.msgBackend = `Error GETing from backend: ${error}`))
 
     axios
-      .get('https://us-central1-compact-garage-247116.cloudfunctions.net/hello-world-function')
+      .get(googleFunctionUrl)
       .then(response => (this.msgFunction = response.data))
       .catch(error => (this.msgFunction = `Error GETing from function: ${error}`))
   }
