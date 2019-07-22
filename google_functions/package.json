@@ -1,0 +1,15 @@
+{
+  "name": "google_functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "functions-framework --target=helloGET"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.2.0"
+  }
+}
