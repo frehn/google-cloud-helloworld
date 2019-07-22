@@ -1,13 +1,13 @@
 A sample Google Cloud application using
 
-* a vue.js frontend,
-* a node.js express backend,
+* a Vue.js frontend,
+* a Node.js express backend,
 * a Google Cloud Function.
 
 # Prerequisites
 
 * [Node.js](https://nodejs.org),
-* [vue.js CLI](https://cli.vuejs.org/),
+* [Vue.js CLI](https://cli.vuejs.org/),
 * [Google Cloud SDK](https://cloud.google.com/sdk/) for deploying to Google Cloud.
 
 # Building
